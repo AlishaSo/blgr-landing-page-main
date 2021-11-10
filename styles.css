@@ -1,0 +1,30 @@
+:root {
+  --cta-text: hsl(356, 100%, 66%);
+  --cta-bckg-hover: hsl(355, 100%, 74%);
+  --heading-drkblue: hsl(208, 49%, 24%);
+  --text-wht: hsl(0, 0%, 100%);
+  --footer-text: hsl(240, 2%, 79%);
+  --body-copy: hsl(207, 13%, 34%);
+  --footer-bckg: hsl(240, 10%, 16%);
+  --gradient-vlred: hsl(13, 100%, 72%);
+  --gradient-lred: hsl(353, 100%, 62%);
+  --gradient-vdgreyblue: hsl(237, 17%, 21%);
+  --gradient-vddblue: hsl(237, 23%, 32%);
+
+  --ff-body: 'Ubuntu', sans-serif;
+  --ff-menu: 'Overpass', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
