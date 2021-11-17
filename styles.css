@@ -40,11 +40,41 @@ h1 {
 }
 
 h2 {
+  font-weight: 400;
+}
+
+.sec-1-title {
   color: var(--heading-drkblue);
   font-size: 1.75rem;
 }
 
+.sec-2-title {
+  color: var(--text-wht);
+  font-size: 2rem;
+}
+
 h3 {
   color: var(--heading-drkblue);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.home-top {
+  background-image: linear-gradient(225deg, var(--gradient-lred), var(--gradient-vlred));
+  border-bottom-left-radius: 82px;
+  color: var(--text-wht);
+  padding-bottom: 6em;
+}
+
+.sec-2 {
+  background-image: linear-gradient(var(--gradient-vdgreyblue), var(--gradient-vddblue));
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 90px;
+  color: var(--text-wht);
+  padding-bottom: 6em;
+}
+
+.footer {
+  background-color: var(--footer-bckg);
+  border-top-right-radius: 90px;
 }
