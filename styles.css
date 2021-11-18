@@ -69,6 +69,24 @@ h4 {
   padding-bottom: 6em;
 }
 
+header {
+  align-items: center;
+  display: flex;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.show {
+  display: initial;
+}
+
+.burger-menu {
+  all: unset;
+  margin-left: auto;
+}
+
 a {
   text-decoration-line: none;
   font-weight: 100;
