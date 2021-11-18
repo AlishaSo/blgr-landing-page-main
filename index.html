@@ -7,7 +7,7 @@
     <title>Blgr landing page</title> <!-- <title>Frontend Mentor | [Blogr]</title> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
 
     <link href='styles.css' rel='stylesheet' type='text/css'/>
   </head>
@@ -15,7 +15,7 @@
   <body>
     <div class="home-top">
       <header>
-        <img src='images/logo.svg' alt='logo'>
+        <img class='header-logo' src='images/logo.svg' alt='logo'>
         <button class='burger-menu'>
           <img src='images/icon-hamburger.svg' alt='burger menu'/>
         </button>
@@ -75,16 +75,16 @@
             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
           </p>
         </div>
-        <div class="sec-1-img">
-          <img src='images/illustration-editor-mobile.svg' alt='Editor mockup. Background: header is salmon-colored, and body is dark blue. In forefront, on the left a small white cube with a dark blue circle in the middle. On the right, a vertical rectangle with a salmon squiggly line through the middle.'/>
+        <div class="sec-1-img-container">
+          <img class='sec-1-img' src='images/illustration-editor-mobile.svg' alt='Editor mockup. Background: header is salmon-colored, and body is dark blue. In forefront, on the left a small white cube with a dark blue circle in the middle. On the right, a vertical rectangle with a salmon squiggly line through the middle.'/>
         </div>
       </section>
 
       <section class="container sec-2">
+        <div class="sec-2-img-container">
+          <img class='sec-2-img' src='images/illustration-phones.svg' alt='Two phones screens next to each other, first one is offset a little towards the top. Second is offset an equal amount towards the bottom. First screen has a salmon background with the "Blgr" logo in the middle. Second screen has a salmon header background, and rest of background is light purple. On the foreground there are five empty white rectangles from top to bottom.'>
+        </div>
         <div class="sec-2-text">
-          <div class="sec-2-img">
-            <img src='images/illustration-phones.svg' alt='Two phones screens next to each other, first one is offset a little towards the top. Second is offset an equal amount towards the bottom. First screen has a salmon background with the "Blgr" logo in the middle. Second screen has a salmon header background, and rest of background is light purple. On the foreground there are five empty white rectangles from top to bottom.'>
-          </div>
           <h2 class='sec-2-title'>State of the Art Infrastructure</h2>
           <p>
             With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
@@ -94,8 +94,8 @@
       </section>
 
       <section class="container sec-3">
-        <div class="sec-3-img">
-          <img src='images/illustration-laptop-mobile.svg' alt='Illustration of an open laptop showing a mock website. There is a salmon header strip on the background and the bottom part of the background is light grey. On the foreground, there are two columns. The left column is small in width, and is just white. The right column is wider, and has two rows. First row is a grey rectangle. Second row is a grey cube, a gap, and a grey rectangle taking up the rest of the width.'/>
+        <div class="sec-3-img-container">
+          <img class='sec-3-img' src='images/illustration-laptop-mobile.svg' alt='Illustration of an open laptop showing a mock website. There is a salmon header strip on the background and the bottom part of the background is light grey. On the foreground, there are two columns. The left column is small in width, and is just white. The right column is wider, and has two rows. First row is a grey rectangle. Second row is a grey cube, a gap, and a grey rectangle taking up the rest of the width.'/>
         </div>
         <div class="sec-3-text">
           <h3>Free, open, simple</h3>
@@ -115,7 +115,7 @@
 
     <footer class='footer'>
         <img src='images/logo.svg' alt='logo'>
-        <div class='menu'>
+        <div class='footer-menu'>
           <div class='footer-categories footer-category-1'>
             <h4>Product</h4>
             <ul>
