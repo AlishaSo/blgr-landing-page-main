@@ -1,18 +1,18 @@
 :root {
-  --cta-text: hsl(356, 100%, 66%);
-  --cta-bckg-hover: hsl(355, 100%, 74%);
-  --heading-drkblue: hsl(208, 49%, 24%);
-  --text-wht: hsl(0, 0%, 100%);
-  --footer-text: hsl(240, 2%, 79%);
-  --body-copy: hsl(207, 13%, 34%);
-  --footer-bckg: hsl(240, 10%, 16%);
-  --gradient-vlred: hsl(13, 100%, 72%);
-  --gradient-lred: hsl(353, 100%, 62%);
-  --gradient-vdgreyblue: hsl(237, 17%, 21%);
-  --gradient-vddblue: hsl(237, 23%, 32%);
+  --light-red: hsl(356, 100%, 66%);
+  --v-light-red: hsl(355, 100%, 74%);
+  --v-drk-blue: hsl(208, 49%, 24%);
+  --white: hsl(0, 0%, 100%);
+  --grey-blue: hsl(240, 2%, 79%);
+  --v-drk-grey-blue: hsl(207, 13%, 34%);
+  --v-drk-blck-blue: hsl(240, 10%, 16%);
+  --v-l-red: hsl(13, 100%, 72%);
+  --l-red: hsl(353, 100%, 62%);
+  --v-d-grey-blue: hsl(237, 17%, 21%);
+  --v-d-d-blue: hsl(237, 23%, 32%);
 
-  --ff-footer: 'Ubuntu', sans-serif;
-  --ff-body: 'Overpass', sans-serif;
+  --ff-ubuntu: 'Ubuntu', sans-serif;
+  --ff-overpass: 'Overpass', sans-serif;
 }
 
 html {
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: var(--ff-body);
+  font-family: var(--ff-overpass);
   font-size: 1rem;
   font-weight: 300;
   margin: 0;
@@ -42,17 +42,17 @@ h2 {
 }
 
 .sec-1-title {
-  color: var(--heading-drkblue);
+  color: var(--v-drk-blue);
   font-size: 1.75rem;
 }
 
 .sec-2-title {
-  color: var(--text-wht);
+  color: var(--white);
   font-size: 2rem;
 }
 
 h3 {
-  color: var(--heading-drkblue);
+  color: var(--v-drk-blue);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -62,14 +62,14 @@ h4 {
   margin: 0;
 }
 
-header {
+.mobile-header {
   display: flex;
 }
 
 .home-top {
-  background-image: linear-gradient(180deg, var(--gradient-vlred), var(--gradient-lred));
+  background-image: linear-gradient(180deg, var(--v-l-red), var(--l-red));
   border-bottom-left-radius: 82px;
-  color: var(--text-wht);
+  color: var(--white);
   padding: 3em 1.75em 6em;
   text-align: center;
 }
@@ -82,14 +82,28 @@ header {
   display: initial;
 }
 
+.btn-container {
+  background-color: var(--white);
+  border-radius: 0 0 5px 5px;
+  padding: 1em 0;
+}
+
 .burger-menu {
   all: unset;
   margin-left: auto;
 }
 
+.nav-list {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey-blue);
+  border-radius: 5px 5px 0 0;
+  margin: 2.5em 0 0;
+  padding: 2em 0 1em;
+}
+
 a {
   text-decoration-line: none;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 
 ul {
@@ -98,6 +112,48 @@ ul {
 
 ul li {
   list-style-type: none;
+}
+
+.btn {
+  font-family: var(--ff-ubuntu);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 100px;
+  padding: .75em 1em;
+}
+
+#start-btn {
+  border: none;
+  color: var(--light-red);
+  margin-right: 1em;
+}
+
+#learn-btn {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color:var(--white);
+  padding-left:  1.5em;
+  padding-right:  1.5em;
+}
+
+#login-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--v-drk-blue);
+  display: block;
+  font-family: var(--ff-overpass);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 1em auto;
+}
+
+#sign-btn {
+  background-image: linear-gradient(90deg, var(--v-l-red), var(--l-red));
+  border: none;
+  color: var(--white);
+  display: block;
+  margin: 0 auto;
+  padding: 1em 3em;
 }
 
 .container {
@@ -116,10 +172,10 @@ ul li {
 }
 
 .sec-2 {
-  background-image: linear-gradient(var(--gradient-vdgreyblue), var(--gradient-vddblue));
+  background-image: linear-gradient(var(--v-d-grey-blue), var(--v-d-d-blue));
   border-bottom-left-radius: 80px;
   border-top-right-radius: 90px;
-  color: var(--text-wht);
+  color: var(--white);
   padding-bottom: 6em;
 }
 
@@ -128,9 +184,9 @@ ul li {
 }
 
 .footer {
-  background-color: var(--footer-bckg);
+  background-color: var(--v-drk-blck-blue);
   border-top-right-radius: 90px;
-  font-family: var(--ff-footer);
+  font-family: var(--ff-ubuntu);
 }
 
 .footer img {
@@ -146,12 +202,12 @@ ul li {
 }
 
 .footer a {
-  color: var(--footer-text);
+  color: var(--grey-blue);
   font-size: 1rem;
 }
 
 .footer-categories {
-  color: var(--text-wht);
+  color: var(--white);
 }
 
 .footer-category-1, .footer-category-2 {
