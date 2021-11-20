@@ -15,10 +15,12 @@
   <body>
     <div class="home-top">
       <header>
-        <img class='header-logo' src='images/logo.svg' alt='logo'>
-        <button class='burger-menu'>
-          <img src='images/icon-hamburger.svg' alt='burger menu'/>
-        </button>
+        <div class="mobile-header">
+          <img class='header-logo' src='images/logo.svg' alt='logo'>
+          <button class='burger-menu'>
+            <img src='images/icon-hamburger.svg' alt='burger menu'/>
+          </button>
+        </div>
         <nav class='menu'>
           <ul class='nav-list'>
             <li><a href='#'>Product</a>
@@ -46,15 +48,17 @@
               </ul>
             </li>
           </ul>
-          <button>Login</button>
-          <button>Sign Up</button>
+          <div class="btn-container">
+            <button id='login-btn'>Login</button>
+            <button id='sign-btn' class='btn'>Sign Up</button>
+          </div>
         </nav>
       </header>
       <section class='hero-banner'>
         <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
-      <button>Start for Free</button>
-      <button>Learn More</button>
+      <button id='start-btn' class='btn'>Start for Free</button>
+      <button id='learn-btn' class='btn'>Learn More</button>
         </section>
     </div>
 
