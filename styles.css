@@ -134,6 +134,7 @@ ul li {
 }
 
 #start-btn {
+  background-color: var(--white);
   border: none;
   color: var(--light-red);
   margin-right: 1em;
