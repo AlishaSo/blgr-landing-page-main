@@ -70,6 +70,7 @@ h4 {
   background-image: linear-gradient(180deg, var(--v-l-red), var(--l-red));
   border-bottom-left-radius: 82px;
   color: var(--white);
+  margin-bottom: 5em;
   padding: 3em 1.75em 6em;
   text-align: center;
 }
@@ -163,12 +164,18 @@ ul li {
   padding: 0 10%;
 }
 
+.sec-1 {
+  margin-bottom: 15em;
+  overflow: hidden;
+}
+
 .sec-1-title {
   order: -2;
 }
 
 .sec-1-img-container {
   order: -1;
+  overflow: hidden;
 }
 
 .sec-2 {
@@ -179,8 +186,33 @@ ul li {
   padding-bottom: 6em;
 }
 
+.sec-2-img-container {
+  position: relative;
+}
+
 .sec-2-img {
-  width: 400px;
+  left: -186px;
+  position: absolute;
+  top: -187px;
+  width: 99vw;
+}
+
+.sec-2-title {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.sec-2-text {
+  margin-top: 14em;
+}
+
+.sec-3 {
+  margin-bottom: 5em;
+  overflow: hidden;
+}
+
+.sec-3-img-container {
+  overflow: hidden;
 }
 
 .footer {
