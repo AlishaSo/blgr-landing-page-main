@@ -71,12 +71,17 @@ h4 {
   border-bottom-left-radius: 82px;
   color: var(--white);
   margin-bottom: 5em;
+  min-height: 90vh;
   padding: 3em 1.75em 6em;
   text-align: center;
 }
 
 .menu {
+  box-shadow: 0 17px 21px -16px grey;
   display: none;
+  position: absolute;
+  right: 27px;
+  width: 85%;
 }
 
 .menu.show {
@@ -86,7 +91,7 @@ h4 {
 .btn-container {
   background-color: var(--white);
   border-radius: 0 0 5px 5px;
-  padding: 1em 0;
+  padding: 1em 0 2em;
 }
 
 .burger-menu {
@@ -94,17 +99,22 @@ h4 {
   margin-left: auto;
 }
 
+.nav-list-container {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  margin: 2.25em 0 0;
+}
+
 .nav-list {
   background-color: var(--white);
   border-bottom: 1px solid var(--grey-blue);
   border-radius: 5px 5px 0 0;
-  margin: 2.5em 0 0;
+  margin: 0 1.5em;
   padding: 2em 0 1em;
 }
 
 a {
   text-decoration-line: none;
-  /* font-weight: 100; */
 }
 
 ul {
@@ -155,6 +165,12 @@ ul li {
   display: block;
   margin: 0 auto;
   padding: 1em 3em;
+}
+
+.hero-banner {
+  align-items: center;
+  display: flex;
+  min-height: 65vh;
 }
 
 .container {
