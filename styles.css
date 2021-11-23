@@ -3,13 +3,15 @@
   --v-light-red: hsl(355, 100%, 74%);
   --v-drk-blue: hsl(208, 49%, 24%);
   --white: hsl(0, 0%, 100%);
-  --grey-blue: hsl(240, 2%, 79%);
+  --grey-blue: hsl(240, 3%, 79%);
   --v-drk-grey-blue: hsl(207, 13%, 34%);
   --v-drk-blck-blue: hsl(240, 10%, 16%);
   --v-l-red: hsl(13, 100%, 72%);
   --l-red: hsl(353, 100%, 62%);
   --v-d-grey-blue: hsl(237, 17%, 21%);
   --v-d-d-blue: hsl(237, 23%, 32%);
+  
+  --l-grey: rgba(238, 237, 237, 0.842);
 
   --ff-ubuntu: 'Ubuntu', sans-serif;
   --ff-overpass: 'Overpass', sans-serif;
@@ -106,11 +108,69 @@ h4 {
 }
 
 .nav-list {
-  background-color: var(--white);
   border-bottom: 1px solid var(--grey-blue);
   border-radius: 5px 5px 0 0;
   margin: 0 1.5em;
   padding: 2em 0 1em;
+}
+
+.nav-item a {
+  color: var(--v-drk-blue);
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+.nav-item-sublist {
+  margin-top: 1em;
+  position: relative;
+}
+
+.nav-item-sublist::after {
+  background-image: url(images/icon-arrow-dark.svg);
+  background-repeat: no-repeat;
+  content: '';
+  height: 10px;
+  right: 5em;
+  top: .5em;
+  transform: var(--transform);
+  padding-left: 4px;
+  position: absolute;
+  width: 10px;
+}
+
+.nav-item-sublist.arrow-up::after {
+  background-image: url(images/icon-arrow-dark.svg);
+  background-repeat: no-repeat;
+  content: '';
+  height: 10px;
+  right: 5em;
+  top: .5em;
+  transform: translateY(-50%) rotate(0.5turn);
+  padding-left: 4px;
+  position: absolute;
+  width: 10px;
+}
+
+.sublist {
+  background-color: var(--l-grey);
+  border-radius: 4px;
+  display: none;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.sublist .nav-item {
+  padding: .5em 0;
+}
+
+.sublist a {
+  opacity: .7;
+}
+
+.sublist.show {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5em;
 }
 
 a {
@@ -200,6 +260,7 @@ ul li {
   border-bottom-left-radius: 80px;
   border-top-right-radius: 90px;
   color: var(--white);
+  margin-bottom: 4em;
   padding-bottom: 6em;
 }
 
