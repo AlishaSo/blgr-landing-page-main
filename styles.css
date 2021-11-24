@@ -10,7 +10,7 @@
   --l-red: hsl(353, 100%, 62%);
   --v-d-grey-blue: hsl(237, 17%, 21%);
   --v-d-d-blue: hsl(237, 23%, 32%);
-  
+
   --l-grey: rgba(238, 237, 237, 0.842);
 
   --ff-ubuntu: 'Ubuntu', sans-serif;
@@ -269,10 +269,10 @@ ul li {
 }
 
 .sec-2-img {
-  left: -186px;
+  left: -184px;
   position: absolute;
-  top: -187px;
-  width: 99vw;
+  top: -185px;
+  width: 370px;
 }
 
 .sec-2-title {
