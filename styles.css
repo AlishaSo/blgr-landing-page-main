@@ -346,3 +346,102 @@ ul li {
 .attribution a {
   font-size: .75rem;
 }
+
+@media (min-width: 428px) {
+  header {
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 60.25rem;
+    padding: 0;
+  }
+
+  .logo {
+    padding-right: 2em;
+  }
+
+  .home-top {
+    background-image: linear-gradient(90deg, var(--v-l-red), var(--l-red));
+    
+    padding: 3em 8em 0;
+  }
+
+  .burger-menu {
+    visibility: hidden;
+  }
+
+  .menu {
+    box-shadow: none;
+    display: flex;
+    position: static;
+    visibility: initial;
+  }
+
+  .nav-list-container {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    margin: 0;
+  }
+
+  .nav-list {
+    align-items: center;
+    border: none;
+    display: flex;
+    gap: 3em;
+    padding: 0;
+  }
+
+  .nav-item a {
+    color: var(--white);
+  }
+
+  .nav-item-sublist {
+    margin-top: 0;
+  }
+  
+  .nav-item-sublist::after {
+    background-image: url(images/icon-arrow-light.svg);
+    right: -1em;
+    top: .75em;
+  }
+
+  .nav-item-sublist.arrow-up::after {
+    background-image: url(images/icon-arrow-light.svg);
+    right: -1em;
+    top: .75em;
+  }
+
+  .btn-container {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  #login-btn {
+    color: var(--white);
+    font-size: 1.15em;
+  }
+
+  #sign-btn {
+    background-color: var(--white);
+    background-image: none;
+    border-radius: 100px;
+    color: var(--l-red);
+    margin-left: 1em;
+    padding: .75em 2em;
+  }
+
+  .hero-banner {
+    margin: 0 auto;
+    max-width: 56.25rem;
+    min-height: 45vh;
+  }
+
+  h1 {
+    font-size: calc(1.75em + 3vh);
+  }
+}
