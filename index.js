@@ -20,8 +20,13 @@ mobileMenu.addEventListener('click', () => {
 
 sublistToggle.forEach(item => 
   item.addEventListener('click', event => {
+    console.log('working');
     const currentSub = item.children[1];
-    item.classList.toggle('arrow-up');
-      currentSub.classList.toggle('show');
-    console.log(item);
+    const currentArrowActive = document.querySelector('.nav-item-sublist.nav-item.arrow-up');
+    const currentSubActive = document.querySelector('.sublist.show');
+    
+    currentArrowActive?.classList.remove('arrow-up');
+    currentSubActive?.classList.remove('show');
+    item.classList.add('arrow-up');
+    currentSub.classList.toggle('show');
   }));
