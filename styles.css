@@ -347,25 +347,35 @@ ul li {
   font-size: .75rem;
 }
 
-@media (min-width: 428px) {
-  header {
-    align-items: center;
-    display: flex;
-    justify-items: center;
-    margin: 0 auto;
-    max-width: 60.25rem;
-    padding: 0;
-  }
+/* || Tablet Styles */
 
-  .logo {
-    padding-right: 2em;
-  }
+@media (min-width: 428px) and (max-width: 750px) {
 
+}
+
+/* || Desktop Styles */
+
+@media (min-width: 751px) {
   .home-top {
     background-image: linear-gradient(90deg, var(--v-l-red), var(--l-red));
     
-    padding: 3em 8em 0;
+    padding: 3em 3em 0;
   }
+
+  header {
+    align-items: center;
+    display: flex;
+    /* justify-content: flex-end; */
+    /* margin: 0 auto; */
+    /* max-width: 60.25rem; */
+    /* padding: 0; */
+  }
+
+  .header-logo {
+    /* position: relative; */
+    /* padding-right: 2em; */
+  }
+
 
   .burger-menu {
     visibility: hidden;
@@ -374,8 +384,10 @@ ul li {
   .menu {
     box-shadow: none;
     display: flex;
+    justify-content: space-between;
+    /* padding-right: 3em; */
     position: static;
-    visibility: initial;
+    visibility: visible;
   }
 
   .nav-list-container {
@@ -399,6 +411,7 @@ ul li {
 
   .nav-item-sublist {
     margin-top: 0;
+    position: relative;
   }
   
   .nav-item-sublist::after {
@@ -413,11 +426,26 @@ ul li {
     top: .75em;
   }
 
+  .sublist.show {
+    background-color: var(--white);
+    padding: 1em 1.5em;
+    position: absolute;
+  }
+
+  .sublist a {
+    color: black;
+  }
+
+  .sublist a:hover,
+  .sublist a:focus {
+    font-weight: bold;
+  }
+
   .btn-container {
     align-items: center;
     background-color: transparent;
     display: flex;
-    margin-left: auto;
+    margin-left: 2em;
     padding: 0;
   }
 
