@@ -40,6 +40,7 @@ body {
 h1 {
   font-size: 2.25rem;
   font-weight: 400;
+  max-width: 325px;
 }
 
 h2 {
@@ -72,12 +73,14 @@ h4 {
 }
 
 .home-top {
-  background-image: linear-gradient(180deg, var(--v-l-red), var(--l-red));
+  background: url(images/bg-pattern-intro.svg) no-repeat top 30% left 33%, 
+  linear-gradient(180deg, var(--v-l-red), var(--l-red));
+  background-size: 325%;
   border-bottom-left-radius: 82px;
   color: var(--white);
   margin-bottom: 5em;
-  min-height: 90vh;
-  padding: 3em 1.75em 6em;
+  min-height: 70vh;
+  padding: 3em 1.75em 0;
   text-align: center;
 }
 
@@ -204,11 +207,24 @@ ul li {
   font-family: var(--ff-overpass);
   font-size: 1.25rem;
   font-weight: 400;
+  margin: 0 auto .5em;
 }
 
 #login-btn:hover {
   opacity: .8;
   text-decoration: underline;
+}
+
+.hero-banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.hero-container p {
+  margin: 0 auto 2em;
+  max-width: 250px;
 }
 
 #sign-btn {
@@ -253,13 +269,6 @@ ul li {
   cursor: pointer;
 }
 
-.hero-banner {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 65vh;
-}
-
 .container {
   align-items: center;
   display: flex;
@@ -270,6 +279,11 @@ ul li {
 .sec-1 {
   margin-bottom: 15em;
   overflow: hidden;
+}
+
+.sec-1 .wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .sec-1-title {
@@ -384,25 +398,17 @@ ul li {
 
 @media (min-width: 751px) {
   .home-top {
-    background-image: linear-gradient(90deg, var(--v-l-red), var(--l-red));
-    
+    background: url('images/bg-pattern-intro.svg') no-repeat top 50% left 30.25%, 
+    linear-gradient(90deg, var(--v-l-red), var(--l-red));
+    margin-bottom: 7em;
+    min-height: 75vh;
     padding: 3em 3em 0;
   }
 
   header {
     align-items: center;
     display: flex;
-    /* justify-content: flex-end; */
-    /* margin: 0 auto; */
-    /* max-width: 60.25rem; */
-    /* padding: 0; */
   }
-
-  .header-logo {
-    /* position: relative; */
-    /* padding-right: 2em; */
-  }
-
 
   .burger-menu {
     visibility: hidden;
@@ -412,7 +418,6 @@ ul li {
     box-shadow: none;
     display: flex;
     justify-content: space-between;
-    /* padding-right: 3em; */
     position: static;
     visibility: visible;
   }
@@ -498,5 +503,137 @@ ul li {
 
   h1 {
     font-size: calc(1.75em + 3vh);
+  }
+
+  .sec-1 {
+    margin-bottom: 6em;
+  }
+
+  .sec-1 .wrapper {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .sec-1.container {
+    padding-right: 0;
+  }
+
+  .sec-1-text {
+    font-size: .75rem;
+    margin-right: 11%;
+    max-width: 400px;
+    padding-right: 2em;
+    text-align: left;
+  }
+
+  .sec-1-text h3 {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .sec-1-img-container {
+    order: 0;
+  }
+
+  .sec-1-img {
+    max-width: 500px;
+    transform: translateX(27.5%);
+    width: 100%;
+  }
+
+  .sec-2 {
+    margin-bottom: 7em;
+  }
+
+  .sec-2.container {
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 267px;
+  }
+
+  .sec-2-img-container {
+    position: static;
+    transform: translateY(-12%);
+    padding-left: 2em;
+    padding-right: 6em;
+  }
+
+  .sec-2-img {
+    position: static;
+  }
+
+  .sec-2-text {
+    margin-top: 2em;
+    max-width: 380px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .sec-2-title {
+    font-size: 1.75em;
+  }
+
+  .sec-2-text p {
+    font-size: .75em;
+  }
+
+  .sec-3 {
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 6em;
+  }
+
+  .sec-3.container {
+    padding-left: 0;
+  }
+
+  .sec-3-img {
+    max-width: 500px;
+    transform: translateX(-28.5%);
+    width: 100%;
+  }
+
+  .sec-3-text {
+    font-size: .75rem;
+    margin-left: 11%;
+    max-width: 400px;
+    padding-right: 2em;
+    text-align: left;
+  }
+
+  .sec-3-text h3 {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .footer {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 45px;
+  }
+
+  .footer-logo {
+    grid-column: 2 / span 3;
+  }
+
+  .footer-menu {
+    align-items: flex-start;
+    display: flex;
+    gap: 8em;
+    grid-column: 5 / span 5;
+    padding-top: 4.5em;
+  }
+
+  .footer-category-1,
+  .footer-category-2,
+  .footer-category-3 {
+    margin-bottom: 0;
+  }
+
+  .attribution {
+    grid-column: 1 / span 12;
+    padding: 0;
   }
 }

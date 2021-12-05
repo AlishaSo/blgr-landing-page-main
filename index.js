@@ -6,6 +6,10 @@ const mobileMenuImage = document.querySelector('.mobile-menu-img');
 
 const sublistToggle = document.querySelectorAll('.nav-item-sublist');
 
+const screenWidth = screen.width;
+const secOneImg = document.querySelector('.sec-1-img');
+const secThreeImg = document.querySelector('.sec-3-img');
+
 mobileMenu.addEventListener('click', () => {
   // console.log('I\'ve been clicked');
   navBar.classList.toggle('show');
@@ -29,4 +33,15 @@ sublistToggle.forEach(item =>
     currentSubActive?.classList.remove('show');
     item.classList.add('arrow-up');
     currentSub.classList.toggle('show');
-  }));
+  })
+);
+
+// window.addEventListener('resize', () => {
+//   // console.log('resizing');
+  
+// });
+if(screenWidth >= 751) {
+  secOneImg.setAttribute('src', 'images/illustration-editor-desktop.svg');
+  secThreeImg.setAttribute('src', 'images/illustration-laptop-desktop.svg');
+
+}
