@@ -74,7 +74,7 @@ h4 {
 
 .home-top {
   background: url(images/bg-pattern-intro.svg) no-repeat top 30% left 33%, 
-  linear-gradient(180deg, var(--v-l-red), var(--l-red));
+    linear-gradient(180deg, var(--v-l-red), var(--l-red));
   background-size: 325%;
   border-bottom-left-radius: 82px;
   color: var(--white);
@@ -284,6 +284,7 @@ ul li {
 .sec-1 .wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .sec-1-title {
@@ -293,10 +294,17 @@ ul li {
 .sec-1-img-container {
   order: -1;
   overflow: hidden;
+  width: 100%;
+}
+
+.sec-1-img {
+  width: 100%;
 }
 
 .sec-2 {
-  background-image: linear-gradient(var(--v-d-grey-blue), var(--v-d-d-blue));
+  background: url(images/bg-pattern-circles.svg) no-repeat bottom 515% left 50%, 
+    linear-gradient(var(--v-d-grey-blue), var(--v-d-d-blue));
+  background-size: 160%;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 95px;
   color: var(--white);
@@ -321,7 +329,7 @@ ul li {
 }
 
 .sec-2-text {
-  margin-top: 14em;
+  margin-top: 11em;
 }
 
 .sec-3 {
@@ -408,6 +416,10 @@ ul li {
   header {
     align-items: center;
     display: flex;
+  }
+
+  h1 {
+    max-width: unset;
   }
 
   .burger-menu {
@@ -542,6 +554,9 @@ ul li {
   }
 
   .sec-2 {
+    background: url(images/bg-pattern-circles.svg) no-repeat top 80% left -15%, 
+      linear-gradient(var(--v-d-grey-blue), var(--v-d-d-blue));
+    background-size: 50%;
     margin-bottom: 7em;
   }
 
